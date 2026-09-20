@@ -22,9 +22,9 @@ const questions = [
     text: '📍 Primera cita — ¿qué instancia ejecutamos?',
     options: [
       '☕ Café + código — pair programming romántico',
-      '🔭 Planetario — explorar el universo juntos',
+      '🎬 Cine',
       '🎮 Arcade vintage — retro & chill',
-      '📚 Librería + helado — the OG nerd date',
+      '🍦 Helado',
     ],
   },
   {
