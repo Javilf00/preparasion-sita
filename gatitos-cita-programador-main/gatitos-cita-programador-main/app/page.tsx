@@ -52,21 +52,21 @@ const questions = [
 ];
 
 const questionHeaderImages: Record<number, string> = {
-  3: '/memes/gatito3.png',
-  4: '/memes/gatito4.png',
-  5: '/memes/gatito5.png',
-  6: '/memes/gatito6.png',
+  3: './memes/gatito3.png',
+  4: './memes/gatito4.png',
+  5: './memes/gatito5.png',
+  6: './memes/gatito6.png',
 };
-const catHeaderImg = '/memes/gatito7.png';
-const catImagesStep1 = ['/memes/1.png', '/memes/2.png', '/memes/5.png'];
-const catImagesStep2 = ['/memes/3.jpg', '/memes/4.png'];
+const catHeaderImg = './memes/gatito7.png';
+const catImagesStep1 = ['./memes/1.png', './memes/2.png', './memes/5.png'];
+const catImagesStep2 = ['./memes/3.jpg', './memes/4.png'];
 
 const floatCatSrcs = [
-  '/memes/1.png',
-  '/memes/2.png',
-  '/memes/3.jpg',
-  '/memes/4.png',
-  '/memes/5.png',
+  './memes/1.png',
+  './memes/2.png',
+  './memes/3.jpg',
+  './memes/4.png',
+  './memes/5.png',
 ];
 
 const initialAns: Record<number, string> = {};
@@ -213,7 +213,7 @@ export default function HomePage() {
     <main className="app" style={{ width: '100%', maxWidth: 560, margin: '0 auto', minHeight: '100vh', padding: '16px 12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ width: '100%' }}>
         <div className="header" style={{ textAlign: 'center', marginBottom: 20, animation: 'fadeDown 0.6s ease' }}>
-          <img src="/memes/gatito1.png" alt="gatito1" style={{ width: 100, height: 'auto', borderRadius: 16, display: 'block', margin: '0 auto 12px', filter: 'drop-shadow(0 0 20px rgba(192, 132, 252, 0.5))' }} />
+          <img src="./memes/gatito1.png" alt="gatito1" style={{ width: 100, height: 'auto', borderRadius: 16, display: 'block', margin: '0 auto 12px', filter: 'drop-shadow(0 0 20px rgba(192, 132, 252, 0.5))' }} />
           <h1 style={{ fontSize: 22, fontWeight: 900, background: 'linear-gradient(135deg, var(--primary), var(--accent))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', lineHeight: 1.2 }}>
             ¿Saldrías conmigo?
           </h1>
@@ -225,7 +225,7 @@ export default function HomePage() {
         <div className={`step ${currentStep === 0 ? 'active' : ''}`} style={{ display: currentStep === 0 ? 'block' : 'none', animation: 'slideUp 0.4s cubic-bezier(.34,1.56,.64,1)' }} id="s0">
           <div className="plea-card" style={{ background: 'var(--primary-light)', border: '2px solid rgba(124,58,237,0.2)', borderRadius: 'var(--radius)', padding: '14px 16px', display: 'flex', gap: 12, alignItems: 'center', marginBottom: 16 }}>
             <span className="plea-emoji" style={{ flexShrink: 0 }}>
-              <img src="/memes/gatito2.png" alt="Emoji gato" style={{ width: 56, height: 56, borderRadius: 12 }} />
+              <img src="./memes/gatito2.png" alt="Emoji gato" style={{ width: 56, height: 56, borderRadius: 12 }} />
             </span>
             <div className="plea-text" style={{ fontSize: 14, fontWeight: 700, color: 'var(--primary-dark)', lineHeight: 1.4 }}>
               Antes de responder... ¡responde esto primero! 🥺
@@ -607,7 +607,7 @@ export default function HomePage() {
 
           <div className="q-card" style={{ border: '2px solid var(--accent)', textAlign: 'center', padding: 16, borderRadius: 'var(--radius)', background: 'var(--card)', boxShadow: 'var(--shadow)' }}>
             <span style={{ display: 'block', marginBottom: 8 }}>
-              <img src="/memes/gatito0.png" alt="Pregunta final" style={{ display: 'block', margin: '0 auto', width: 80, height: 80, objectFit: 'contain' }} />
+              <img src="./memes/gatito0.png" alt="Pregunta final" style={{ display: 'block', margin: '0 auto', width: 80, height: 80, objectFit: 'contain' }} />
             </span>
             <div className="q-text" style={{ fontSize: 18, lineHeight: 1.4, fontWeight: 800, color: 'var(--text)' }}>
               Entonces... ¿saldrías conmigo?
@@ -623,9 +623,9 @@ export default function HomePage() {
 
           <div className="finale" id="fmsg" style={{ display: showFinale ? 'block' : 'none', textAlign: 'center', padding: 16, background: 'var(--green-light)', border: '2px solid rgba(16,185,129,0.3)', borderRadius: 'var(--radius)', animation: 'pop 0.5s cubic-bezier(.34,1.56,.64,1)', marginTop: 12 }}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-              <img src="/memes/gatito0.png" alt="gatito0" style={{ display: 'block', width: 50, height: 50, objectFit: 'contain' }} />
-              <img src="/memes/gatito1.png" alt="gatito1" style={{ display: 'block', width: 80, height: 80, objectFit: 'contain' }} />
-              <img src="/memes/gatito0.png" alt="gatito0" style={{ display: 'block', width: 50, height: 50, objectFit: 'contain' }} />
+              <img src="./memes/gatito0.png" alt="gatito0" style={{ display: 'block', width: 50, height: 50, objectFit: 'contain' }} />
+              <img src="./memes/gatito1.png" alt="gatito1" style={{ display: 'block', width: 80, height: 80, objectFit: 'contain' }} />
+              <img src="./memes/gatito0.png" alt="gatito0" style={{ display: 'block', width: 50, height: 50, objectFit: 'contain' }} />
             </div>
 
             <h3 style={{ fontSize: 18, fontWeight: 900, color: 'var(--green)', marginBottom: 6 }}>
@@ -648,7 +648,7 @@ export default function HomePage() {
 
           <div id="pdf-confirmation" ref={pdfContentRef} style={{ position: 'absolute', left: '-9999px', top: 0, width: '148mm', background: 'white', fontFamily: 'Nunito, sans-serif' }}>
             <div style={{ padding: '20px', textAlign: 'center' }}>
-              <img src="/memes/gatito1.png" alt="gatito" style={{ width: 80, height: 'auto', margin: '0 auto 16px' }} />
+              <img src="./memes/gatito1.png" alt="gatito" style={{ width: 80, height: 'auto', margin: '0 auto 16px' }} />
               <h1 style={{ fontSize: 20, color: '#7c3aed', marginBottom: 4 }}>💜 ¡Cita Confirmada! 💜</h1>
               <p style={{ fontSize: 10, color: '#6b7280', marginBottom: 20 }}>// romance.exe iniciado correctamente</p>
             </div>
